@@ -1,0 +1,14 @@
+<jnt = 'http://www.jahia.org/jahia/nt/1.0'>
+<jmix = 'http://www.jahia.org/jahia/mix/1.0'>
+<poc = 'http://www.catamania.com/jahia/poc/1.0'>
+
+[poc:poccomponents] > jmix:droppableContent mixin
+
+[poc:actualites] > jnt:content, jmix:layoutComponentContent
+ + * (nt:base) = nt:base
+ 
+ [poc:actu] > jnt:content, poc:poccomponents
+ - image (weakreference, picker[type='image']) < 'jnt:file'
+ - titre (string)
+ - resume (string)
+ - detail (string, richtext)

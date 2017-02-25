@@ -1,0 +1,41 @@
+.roundedpicto {
+	border-radius: 50%;
+	width: 360px;
+	height: 360px;
+}
+
+.actudetail_cadre {
+	text-align: center;
+	background-color: lightgray;
+}
+
+#actudetail_inside {
+	display: inline-block;	
+}
+
+.smallroundedpicto {
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+}
+
+@media ( min-width : 768px) {
+	.roundedpicto {
+		width: 220px;
+		height: 220px;
+	}
+}
+
+@media ( min-width : 992px) {
+	.roundedpicto {
+		width: 290px;
+		height: 290px;
+	}
+}
+
+@media ( min-width : 1200px) {
+	.roundedpicto {
+		width: 360px;
+		height: 360px;
+	}
+}
